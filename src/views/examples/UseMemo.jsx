@@ -17,12 +17,6 @@ const UseMemo = (props) => {
     // useMemo só recalcula o valor quando as dependências mudam
     const result = React.useMemo(() => sum(n1,n2), [n1, n2])
     
-    // Alternativa ao useMemo
-    // const [result, setResult] = React.useState(0)
-    
-    // React.useEffect(function () {
-    //     setResult(sum(n1, n2))
-    // }, [n1, n2])
 
     
     return (
